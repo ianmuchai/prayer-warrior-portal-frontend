@@ -1,0 +1,247 @@
+/* Support Page Styles */
+
+.support-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.support-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  max-width: 700px;
+  width: 100%;
+  padding: 40px;
+  position: relative;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #CE1126;
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background: #f0f0f0;
+  color: #A01020;
+}
+
+.support-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.support-icon {
+  font-size: 64px;
+  color: #CE1126;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.support-header h1 {
+  font-size: 32px;
+  color: #1a1a1a;
+  margin: 0 0 12px 0;
+  font-weight: 700;
+}
+
+.support-header p {
+  color: #666;
+  font-size: 15px;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.support-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.amount-section,
+.benefits-section,
+.payment-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.amount-section h2,
+.benefits-section h2,
+.payment-info h3 {
+  color: #1a1a1a;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.amount-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 12px;
+}
+
+.amount-btn {
+  padding: 12px 16px;
+  border: 2px solid #e0e0e0;
+  background: white;
+  color: #1a1a1a;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.amount-btn:hover {
+  border-color: #CE1126;
+  color: #CE1126;
+}
+
+.amount-btn.active {
+  border-color: #CE1126;
+  background: #CE1126;
+  color: white;
+}
+
+.custom-amount {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.custom-amount label {
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.custom-input {
+  padding: 12px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.custom-input:focus {
+  outline: none;
+  border-color: #CE1126;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.benefits-list li {
+  padding: 12px 16px;
+  background: #f5f5f5;
+  border-left: 4px solid #CE1126;
+  border-radius: 4px;
+  color: #1a1a1a;
+  font-size: 15px;
+}
+
+.mpesa-info {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e8e8e8;
+}
+
+.mpesa-info p {
+  margin: 0 0 12px 0;
+  color: #1a1a1a;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.mpesa-info p:last-child {
+  margin-bottom: 0;
+}
+
+.instructions {
+  color: #666;
+  font-style: italic;
+}
+
+.support-button {
+  padding: 16px 32px;
+  background: #CE1126;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(206, 17, 38, 0.15);
+}
+
+.support-button:hover:not(:disabled) {
+  background: #A01020;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(206, 17, 38, 0.25);
+}
+
+.support-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.support-note {
+  background: #f0f8ff;
+  border-left: 4px solid #CE1126;
+  padding: 16px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.support-note p {
+  color: #1a1a1a;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .support-card {
+    padding: 24px;
+  }
+
+  .support-header h1 {
+    font-size: 24px;
+  }
+
+  .amount-buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .support-button {
+    padding: 14px 24px;
+    font-size: 14px;
+  }
+}

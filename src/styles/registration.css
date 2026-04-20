@@ -1,0 +1,335 @@
+/* Registration Page Styles */
+
+.registration-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.registration-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.registration-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.registration-header h1 {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin: 0 0 10px 0;
+}
+
+.registration-header h2 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #e0e0ff;
+  margin: 0;
+}
+
+.registration-form {
+  padding: 40px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-input::placeholder {
+  color: #bbb;
+}
+
+.support-group {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.form-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #667eea;
+}
+
+.checkbox-label {
+  margin: 0;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+
+.support-info {
+  margin-top: 12px;
+  padding: 12px;
+  background: #e8f5e9;
+  border-left: 3px solid #4caf50;
+  color: #2e7d32;
+  font-size: 13px;
+  border-radius: 4px;
+}
+
+.message {
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.message-success {
+  background: #e8f5e9;
+  border: 2px solid #4caf50;
+  color: #2e7d32;
+}
+
+.message-error {
+  background: #ffebee;
+  border: 2px solid #f44336;
+  color: #c62828;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.submit-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.submit-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Success View Styles */
+.success-view {
+  padding: 40px;
+}
+
+.success-message {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.success-message h2 {
+  color: #4caf50;
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+
+.welcome {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+}
+
+.registration-details {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  border: 1px solid #e0e0e0;
+}
+
+.registration-details h3 {
+  color: #333;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 10px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 14px;
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-item .label {
+  font-weight: 600;
+  color: #666;
+}
+
+.detail-item .value {
+  color: #333;
+  text-align: right;
+}
+
+.transaction-section {
+  background: #f5f9ff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  border-left: 4px solid #2196f3;
+}
+
+.transaction-section h3 {
+  margin-top: 0;
+  color: #1976d2;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.transaction-card {
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.transaction-item:last-child {
+  margin-bottom: 0;
+}
+
+.transaction-item .label {
+  font-weight: 600;
+  color: #666;
+}
+
+.transaction-item .value {
+  color: #333;
+  font-weight: 500;
+}
+
+.transaction-item .status {
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.transaction-item .status.completed {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.transaction-item .status.pending {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.register-another-button {
+  width: 100%;
+  padding: 12px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.register-another-button:hover {
+  background: #764ba2;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .registration-card {
+    border-radius: 8px;
+  }
+
+  .registration-header {
+    padding: 30px 15px;
+  }
+
+  .registration-header h1 {
+    font-size: 20px;
+  }
+
+  .registration-form,
+  .success-view {
+    padding: 25px;
+  }
+
+  .detail-item,
+  .transaction-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .detail-item .value,
+  .transaction-item .value,
+  .transaction-item .status {
+    margin-top: 5px;
+  }
+}
